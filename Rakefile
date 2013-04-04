@@ -13,7 +13,7 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
-gemspec = eval(File.read('liquid.gemspec'))
+gemspec = eval(File.read('wordify_liquid.gemspec'))
 Gem::PackageTask.new(gemspec) do |pkg|
   pkg.gem_spec = gemspec
 end
