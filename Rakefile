@@ -20,7 +20,7 @@ end
 
 desc "Build the gem and release it to rubygems.org"
 task :release => :gem do
-  sh "gem push pkg/liquid-#{gemspec.version}.gem"
+  sh "gem push pkg/wordify_liquid-#{gemspec.version}.gem"
 end
 
 namespace :benchmark do
