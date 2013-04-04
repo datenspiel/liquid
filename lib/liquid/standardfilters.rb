@@ -45,7 +45,7 @@ module Liquid
       input.length > length.to_i ? input[0...l] + truncate_string : input
     end
 
-    def truncatewords(input, words = 15, truncate_string = "...")
+    def truncatewords(input, words = 15, truncate_string = " ...")
       if input.nil? then return end
       wordlist = input.to_s.split
       l = words.to_i - 1
